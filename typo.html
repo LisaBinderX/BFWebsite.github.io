@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Typografie</title>
+        <link rel="stylesheet" href="styleTypo.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/Logo.png" alt="Inclusive Harmony Logo">
+             </div>
+
+             <div role="search" class="search-container">
+                <input type="text" tabindex="1" id="searchInput" placeholder="Auf dieser Seite suchen..." aria-label="Search">
+                <button onclick="search()" aria-label="Submit Search">Suche</button>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a tabindex="2" href="html.html" aria-label="Gehe zu Home">Home</a></li>
+                    <li><a tabindex="3" href="gesetzliches.html" aria-label="Gehe zu Gesetzliches">Gesetzliches</a></li>
+                    <li><a tabindex="4" href="code.html" aria-label="Gehe zu Code">Code</a></li>
+                    <li><a tabindex="5" href="typo.html" aria-label="Gehe zu Typografie">Typografie</a></li>
+                    <li><a tabindex="6" href="https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFF9F5%0D%0A%23D8B29B%0D%0A%23DA895C%0D%0A%231D2213%0D%0A%23090D0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp">Farben</a></li>
+                    <li><a tabindex="7" id="downloadLink" aria-label="Download Analyse" href="/Data/WCAG_Analyse_LisaBinder.zip" download>Analyse</a></li>
+                </ul>
+            </nav>
+        </header>
+      
+        <main>
+            <div class="top">
+                <h2 class="überschrift1">WAS MACHT EINE BARRIEREFREIE SCHRIFT AUS?</h2>
+                <div class="box-a">
+                    <h3>Erkennbarkeit</h3>
+                    <p>Eine barrierefreie Schrift zeichnet sich durch klare und deutliche Buchstaben aus, die leicht erkennbar sind, auch für Menschen mit Sehbeeinträchtigungen.</p>
+                </div>
+                <div class="box">
+                    <h3>Unterscheidbarkeit</h3>
+                    <p>Die Buchstaben müssen gut voneinander unterscheidbar sein, um Verwechslungen zu vermeiden. Dies betrifft insbesondere ähnlich aussehende Zeichen wie "l" und "I" oder "o" und "0".</p>
+                </div>
+                <div class="box">
+                    <h3>Spiegelung</h3>
+                    <p>Barrierefreie Schriften sollten eine minimale Spiegelung oder Verzerrung aufweisen, um die Lesbarkeit zu verbessern und visuelle Unannehmlichkeiten zu vermeiden.</p>
+                </div>
+                <div class="box-b">
+                    <h3>Offenheit</h3>
+                    <p>Offene Formen in Buchstaben wie "a" oder "e" tragen zur Verbesserung der Lesbarkeit bei, insbesondere für Menschen mit Sehschwierigkeiten.</p>
+                </div>
+                <div class="box-a">
+                    <h3>Strichstärkenkontrast</h3>
+                    <p>Ein ausgewogener Kontrast zwischen dicken und dünnen Linien innerhalb der Buchstaben trägt zur besseren Sichtbarkeit und Unterscheidbarkeit bei.</p>
+                </div>
+                <div class="box">
+                    <h3>Strichstärke</h3>
+                    <p>Die Strichstärke sollte ausreichend sein, um eine klare Wahrnehmung der Buchstaben zu gewährleisten, insbesondere für Menschen mit eingeschränkter Sehfähigkeit.</p>
+                </div>
+                <div class="box">
+                    <h3>Schriftweite</h3>
+                    <p>Die Breite der Buchstaben sollte so angepasst sein, dass sie eine angemessene Lesbarkeit ermöglicht, ohne dass die Zeichen zu gestaucht oder zu weit auseinander liegen.</p>
+                </div>
+                <div class="box-b">
+                    <h3>Zeichenabstand</h3>
+                    <p>Der Abstand zwischen den Buchstaben sollte ausgewogen sein, um eine klare Trennung der Wörter zu gewährleisten und die Lesbarkeit zu erleichtern.</p>
+                </div>
+                <h2 class="überschrift2">TEXTARTEN</h2>
+                <div class="box2">
+                    <h3>Lesetext</h3>
+                    <p>
+                        Bildet den Haupttext und enthält relevante Informationen
+                    </p>
+                    <p>
+                        Hohe Anforderungen an Schriftwahl und Textsatz
+                    </p>
+                    <p>
+                        Bsp.: Fließtext in Büchern, Anleitungen, etc.
+                    </p>
+                </div>
+                <div class="box2-1">
+                    <h3>Konsultationstext</h3>
+                    <p>
+                        Begleitende Informationen zu einem Lesetext, Inhalt ist aber für Verständnis des Lesetexts nicht zwingend notwendig
+                    </p>
+                    <p>
+                        Bsp.: Marginaltext, Fußnoten
+                    </p>
+                </div>
+                <div class="box3">
+                    <h3>Schautext</h3>
+                    <p>
+                        Meistens deutlich größer als Lese- und Konsultationstexte dargestellt                    
+                    </p>
+                    <p>
+                        Sehr geringe Anforderungen an die Leserlichkeit
+                    </p>
+                    <p>
+                        Auch ausgefallene Schriften möglich
+                    </p>
+                    <p>
+                        Keinerlei Bedingungen von der DIN 1450 definiert
+                    </p>
+                    <p>
+                        Bsp.: Überschriften in Zeitschriften oder Werbetafeln im öffentlichen Raum
+                    </p>
+                </div>
+                <div class="box3-1">
+                    <h3>Signalisationstext</h3>
+                    <p>
+                        Wird für Informationen zur Orientierung und für sicherheitsrelevante Informationen im öffentlichen Raum benutzt                    
+                    </p>
+                    <p>
+                        Muss aus möglichst großer Entfernung lesbar sein
+                    </p>
+                    <p>
+                        Hohe Anforderungen an Schriftwahl und Textsatz (z.B. Kontrast, Buchstabenabstand etc.)
+                    </p>
+                    <p>
+                        Bsp.: Leit- und Orientierungssysteme, Kennzeichnung von Notausgängen
+                    </p>
+                </div>
+            </div> 
+            
+            <div class="bottom">
+                <div class="left">
+                    <h2>SCHRIFTGESTALTUNG</h2>
+                    <div class="text-box">
+                        <p>
+                            In einem Design ist die Größe der Buchstaben wichtig, damit der Text gut lesbar und für alle zugänglich ist. Hier sind die empfohlenen Regeln für die Buchstabengröße:                        </p>
+                        <p>
+                            Die kleinste Größe für normalen Text sollte 16 Pixel (entspricht 12 pt) sein. Es ist besser, die Größe in relativen Einheiten wie rem, em und % anzugeben, damit der Text gut skaliert werden kann. Auch bei der kleinsten Größe sollte der Text leicht lesbar sein und daher nicht kleiner als 13 Pixel (entsprechend 10 pt) sein.                        </p>
+                        <p>
+                            Wenn die Buchstaben besonders groß sind, sollten sie nicht zu riesig werden. Die Regel besagt, dass die Größe nicht mehr als 26 Pixel (entsprechend 20 pt) betragen sollte.                        </p>
+                        <p>
+                            Wenn heller Text auf dunklem Hintergrund verwendet wird, sollte die Größe um 10 % größer sein, damit man den Text besser lesen kann.                        </p>
+                        <p>
+                            Für Menschen, die Schwierigkeiten beim Sehen haben, wird empfohlen, die angegebenen Größen mit einem Faktor zwischen 1,4 und 1,75 zu multiplizieren. Das verbessert die Lesbarkeit und Zugänglichkeit. So wird sichergestellt, dass das Design für viele Menschen nutzbar ist.                        </p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img class="cluster" src="images/clusterText.png" alt="" aria-hidden="true">
+                    <div class="text-box2">
+                        <p>
+                            Die Ausrichtung des Textes ist wichtig für die Lesbarkeit und sollte am besten linksbündig sein, um das Lesen zu erleichtern. Es ist ratsam, zu vermeiden, den Text zu stark auszurichten, und stattdessen Absätze zu verwenden, um den Text sinnvoll zu gliedern.                        </p>
+                        <p>
+                            Blocksatz sollte vermieden werden, da er zu ungleichmäßigen Abständen zwischen den Wörtern führen kann. Das beeinträchtigt die Lesbarkeit und ist daher nicht ideal.                        </p>
+                        <p>
+                            Links sollten klar und eindeutig gekennzeichnet sein. Verwende dazu konstante und aussagekräftige Texte, um Links erkennbar zu machen. Es ist wichtig, sich nicht nur auf Farben zu verlassen, um Links zu unterscheiden, damit auch Menschen mit Farbsehschwächen die Information verstehen können.                        </p>
+                    </div>
+                </div>
+                    <div class="third">
+                        <h2 class="uberschrift4">WCAG-KRITERIEN</h2>
+                        <div class="text-double">
+                            <div class="aa">
+                                <h3>Stufe AA</h3>
+                                <h4>Textgröße ändern</h4>
+                                <p>Mit Ausnahme von Untertiteln und Bildern eines Textes, kann Text ohne assistierende Technik um bis zu 200 Prozent geändert werden, ohne dass dabei Inhalt oder Funktionalität verloren geht.</p>
+                                <h4>Textabstände anpassbar</h4>
+                                <p>Die Anpassung</p>
+                                <ul>
+                                    <li>der Zeilenhöhe auf das 1,5-Fache der Textgröße,</li>
+                                    <li>des Abstands nach Absätzen auf das 2-Fache der Textgröße,</li>
+                                    <li>von Buchstabenabständen auf das 0,12-Fache der Textgröße</li>
+                                    <li>und von Wortabständen auf das 0,16-Fache der Textgröße</li>
+                                    <p>führt nicht zu einem Verlust an Inhalten oder Funktionalitäten, zum Beispiel durch das Abschneiden von Inhalten in Elementen, deren Größe sich bei Einstellung größerer Textabstände und dadurch erfolgender Textspreizungen oder Umbrüche nicht dynamisch anpasst.</p>
+                                </ul>
+                            </div>
+                            <div class="aaa">
+                                <h3>Stufe AAA</h3>
+                                <h4>Visuelle Präsentation</h4>
+                                <p>Für die visuelle Präsentation von Textblöcken gibt es einen Mechanismus, um das Folgende zu erreichen:</p>
+                                <ul>
+                                    <li>Vorder- und Hintergrundfarben können vom Benutzer ausgewählt werden.</li>
+                                    <li>Die Breite beträgt nicht mehr als 80 Zeichen oder Glyphen (40 wenn es sich um CJK handelt).</li>
+                                    <li>Text ist nicht im Blocksatz ausgerichtet (sowohl links- als auch rechtsbündig ausgerichtet).</li>
+                                    <li>Der Zeilenabstand (Durchschuss) ist mindestens 1,5-fach innerhalb von Paragraphen und der Paragraphenabstand ist mindestens 1,5-fach so groß wie der Zeilenabstand.</li>
+                                    <li>Die Textgröße kann ohne assistierende Technik bis auf 200 Prozent skaliert werden und zwar so, dass der Leser nicht horizontal scrollen muss, um eine Textzeile in einem bildschirmfüllenden Fenster zu lesen.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="green">
+                            
+                        </div>
+                    </div>
+            </div>
+        </main>
+    </body>
+</html>

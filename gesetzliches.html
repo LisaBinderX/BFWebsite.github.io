@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gesetzliches</title>
+        <link rel="stylesheet" href="styleGesetz.css ">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/Logo.png" alt="Inclusive Harmony Logo">
+             </div>
+
+             <div role="search" class="search-container">
+                <input type="text" tabindex="1" id="searchInput" placeholder="Auf dieser Seite suchen..." aria-label="Search">
+                <button onclick="search()" aria-label="Submit Search">Suche</button>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a tabindex="2" href="html.html" aria-label="Gehe zu Home">Home</a></li>
+                    <li><a tabindex="3" href="gesetzliches.html" aria-label="Gehe zu Gesetzliches">Gesetzliches</a></li>
+                    <li><a tabindex="4" href="code.html" aria-label="Gehe zu Code">Code</a></li>
+                    <li><a tabindex="5" href="typo.html" aria-label="Gehe zu Typografie">Typografie</a></li>
+                    <li><a tabindex="6" href="https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFF9F5%0D%0A%23D8B29B%0D%0A%23DA895C%0D%0A%231D2213%0D%0A%23090D0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp">Farben</a></li>
+                    <li><a tabindex="7" id="downloadLink" aria-label="Download Analyse" href="/Data/WCAG_Analyse_LisaBinder.zip" download>Analyse</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="top">
+                <div class="left-top">
+                    <div class="rectangle">.</div>
+                    <div class="uberschrift"><h2>GESETZLICHES</h2></div>
+                    <div class="waage"><img src="/images/waage.png"alt="" aria-hidden="true"></div>
+                </div>
+                <div class="right-top">    
+                    <div class="intro">
+                        <div><img class="cluster" src="images/clusterAchtung.png"alt="" aria-hidden="true"></div>
+                        <p>Barrierefreiheit ist im Internet kaum vorhanden. </p>
+                        <p>Nur 25% der Onlineshops in Deutschland sind barrierefrei, während andere Websites sehr häufig WCAG-Fehler wie schwachen Textkontrast, keine Alternativtexte oder fehlende Steuerelemente aufweisen.</p>
+                        <p>Jedoch soll ab dem 28.06.2025 das Barrierefreiheitsstärkungsgesetz in Kraft treten, das Unternehmen dazu verpflichtet die Europäische Norm für digitale Barrierefreiheit auf ihre Websites anzuwenden.</p>
+                        <p>Die betroffenen Branchen wie das Finanzwesen müssen ihre Geldautomaten, sowie das Online- und Mobilbanking anpassen. Versicherungen müssen sicherstellen, dass der Zugang zu Anfragen und Versicherungsabschlüssen über Websites barrierefrei gestaltet ist. Das gleiche gilt für den E-Commerce, da Onlineshops und der dadurch erfolgende Produktverkauf auch barrierefrei sein muss.</p>
+                        <p>Betroffen sind auch Personenbeförderung und Medien. 
+                            Grundsätzlich müssen alle Apps und Websites, die eine Art der Interaktion aufweisen oder die Informationen bereit stellt barrierefrei gestaltet sein.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="ausnahme">
+                    <h2>AUSNAHMEN</h2>
+                    <p>Ausgenommen von den Regelungen sind:</p>
+                    <ul>
+                        <li>Kleinstunternehmen mit weniger als zehn Beschäftigten und maximal 2 Millionen Euro Jahresumsatz</li>
+                        <li>Schulen oder öffentlich-rechtliche Medien, deren Angebot nicht für die Öffentlichkeit bestimmt ist</li>
+                        <li>bei einer „grundlegende[n] Veränderung“ (§ 16 Absatz 1 Satz 1 BFSG) des Produkts oder der Dienstleistung durch eine barrierefreie Gestaltung</li>
+                        <li>bei einer „unverhältnismäßige[n] Belastung“ (§ 17 Absatz 1 Satz 1 BFSG), sprich einem wirtschaftlichen Risiko durch die nötigen Maßnahmen</li>
+                        <li>für aufgezeichnete Videos und Dokumente, die vor dem 28. Juni 2025 veröffentlicht wurden</li>
+                        <li>für digitale Archive, deren Inhalte weder aktualisiert noch überarbeitet werden</li>
+                    </ul>
+                </div>
+
+                <div class="ubergang">
+                    <h2>ÜBERGANGSREGELN</h2>
+                    <p>Gewisse Unternehmen bzw. Produkte und Dienstleistungen unterliegen Übergangsregelungen, die teilweise bis Mitte 2030 oder sogar 2040 gelten:</p>
+                    <h4>+ 5 Jahre</h4>
+                    <p>Dienstleistungsverträge und Dienstleistungen unter dem Einsatz von Produkten, die schon vor dem Stichtag verwendet wurden, müssen erst ab dem 28.Juni 2030 barrierefrei sein.</p>
+                    <h4>+ 15 Jahre</h4>
+                    <p>Selbstbedienungsterminals wie Geldautomaten, die vor dem 28. Juni 2025 in Betrieb genommen wurden, müssen spätestens ab 2040 barrierefrei sein.</p>
+                    <p>Dies wird stichprobenartig durch die Marktüberwachungsbehörde der Bundesländer überwacht. Bei Verstößen riskieren die Unternehmen je nach Schweregrad Bußgelder.</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="uberschrift2">
+                    <h2>DIE WCAG</h2>
+                </div>
+                <div class="text-wcag">
+                    <p>Die Web Content Accessibility Guidelines (WCAG) sind die weltweiten Richtlinien für barrierefreies Internet. Diese definieren Erfolgskriterien zur Umsetzung barrierefreier IT.</p>
+                    <p>Herausgegeben wird diese vom World Wide Web Consortium bzw. von den Arbeitsgruppen Web Accessibility Initiative, allerdings kann sich jede Person an der Entwicklung des Standards beteiligen.</p>
+                    <p>Die WCAG ist aktuell in seiner 4. Version, mit der WCAG 2.2. Allerdings ist die WCAG 3.0 bereits in Arbeit.</p>
+                    <p>Die WCAG 2.1 besteht aus 4 Prinzipien, die die allgemeinen Anforderungen abdecken, 13 Richtlinien, also spezifischen Anforderungen und 78 Erfolgskriterien. </p>
+                    <p>Die Erfolgskriterien werden in drei Gruppen aufgeteilt. Den Minimalanforderungen A, den mittleren Anforderungen AA und den höchsten Anforderungen AAA.</p>
+                </div>
+
+                <div class="accordion">
+                    <div tabindex="7" class="tab"><h3 onclick="toggleContent(this)">4 Prinzipien</h3><img class="cross" onclick="toggleContent(this)" src="images/cross.png"></div>
+                    <div class="content">
+                        <p>Die 4 Prinzipien sind: Wahrnehmbarkeit, Bedienbarkeit, Verständlichkeit und Robustheit.</p>
+                    </div>
+        
+                    <div tabindex="8" class="tab"><h3 onclick="toggleContent(this)">13 Richtlinien</h3><img class="cross" onclick="toggleContent(this)" src="images/cross.png"></div>
+                    <div class="content">
+                        <p>Ausgehend davon entstehen die 13 Richtlinien.</p>
+                        <ul>
+                            <p>Im Bereich der <b>Wahrnehmbarkeit</b> ist es entscheidend, klare Textalternativen für nicht-textbasierte Inhalte bereitzustellen und den Zugang zu zeitbasierten Medieninhalten zu gewährleisten. Die Anpassbarkeit der Benutzeroberfläche und die klare Unterscheidbarkeit von Inhalten sind weitere Schlüsselaspekte.</p>
+                            <p>Die Richtlinien für <b>Bedienbarkeit</b> legen Wert darauf, dass alle Funktionen und Inhalte per Tastatur zugänglich sind. Nutzer sollten ausreichend Zeit für die Interaktion haben, ohne durch Zeitbeschränkungen eingeschränkt zu werden. Zudem sollen Inhalte keine Anfälle oder physische Reaktionen auslösen und die Benutzeroberfläche leicht navigierbar sein. Die Unterstützung verschiedener Eingabemodalitäten ist ebenfalls von Bedeutung.</p>
+                            <p>Im Hinblick auf <b>Verständlichkeit</b> sollen Texte gut lesbar sein, und die Funktionsweise der Benutzeroberfläche sollte vorhersehbar sein. Hilfestellungen bei der Eingabe von Informationen sollen eine reibungslose Interaktion ermöglichen.</p>
+                            <p>Die <b>Robustheit</b> der Richtlinien wird durch die Forderung nach Kompatibilität mit verschiedenen Technologien und Plattformen sichergestellt, um eine langfristige Zugänglichkeit der Inhalte zu gewährleisten.</p>
+                        </ul>
+                    </div>
+        
+                    <div tabindex="9" class="tab"><h3 onclick="toggleContent(this)">78 Erfolgskriterien</h3><img class="cross" onclick="toggleContent(this)" src="images/cross.png"></div>
+                    <div class="content">
+                        <ul>
+                            <li>Bieten konkrete Handlungsanweisungen für eine barrierefreie Umsetzung</li>
+                            <li>Sind vielseitig einsetzbar, zum Beispiel für Webinhalte oder beliebige Dokumente</li>
+                            <li>Wird durch zwei Links ergänzt, die auf erläuternde Dokumente verweisen</li>
+                            <li>Erläuterungen zum Zweck und Nutzen des Erfolgskriteriums</li>
+                            <li>Beispiele für die Umsetzung</li>
+                            <li>Links zu ausreichenden beziehungsweise sicheren Techniken, die einem Erfolgskriterium genügen</li>
+                            <li>Links zu weiteren empfohlenen Techniken</li>
+                            <li>Links zu Fehlertechniken, die einem Erfolgskriterium nicht genügen</li>
+                            <li>Die Erfolgskriterien werden drei Konformitätsstufen zugeordnet</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot"> </div>
+            </div>
+
+                
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

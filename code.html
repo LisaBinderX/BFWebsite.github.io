@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Code</title>
+        <link rel="stylesheet" href="styleCode.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/Logo.png" alt="Inclusive Harmony Logo">
+             </div>
+
+             <div role="search" class="search-container">
+                <input type="text" tabindex="1" id="searchInput" placeholder="Auf dieser Seite suchen..." aria-label="Search">
+                <button onclick="search()" aria-label="Submit Search">Suche</button>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a tabindex="2" href="html.html" aria-label="Gehe zu Home">Home</a></li>
+                    <li><a tabindex="3" href="gesetzliches.html" aria-label="Gehe zu Gesetzliches">Gesetzliches</a></li>
+                    <li><a tabindex="4" href="code.html" aria-label="Gehe zu Code">Code</a></li>
+                    <li><a tabindex="5" href="typo.html" aria-label="Gehe zu Typografie">Typografie</a></li>
+                    <li><a tabindex="6" href="https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFF9F5%0D%0A%23D8B29B%0D%0A%23DA895C%0D%0A%231D2213%0D%0A%23090D0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp">Farben</a></li>
+                    <li><a tabindex="7" id="downloadLink" aria-label="Download Analyse" href="/Data/WCAG_Analyse_LisaBinder.zip" download>Analyse</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="left">
+                <div class="sem">
+                    <h2>SEMANTISCHES HTML</h2>
+                    <p class="intro">
+                        In der Programmierung bezieht sich Semantik auf die Bedeutung eines Codeabschnitts, diese stellt uns also HTML Elemente mit Bedeutung zur Verfügung.
+                    </p>
+                    <div class="sem-text">
+                        <p>
+                            Semantisches HTML ist eine effektive Methode, um Webseiteninhalt klar und sinnvoll zu strukturieren. 
+                        </p>
+                        <p>
+                            Durch die Verwendung spezifischer Tags wie <code>&lt;head&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, und <code>&lt;footer&gt;</code> wird nicht nur der Code für Entwickler übersichtlicher, sondern auch für Suchmaschinen besser interpretierbar. 
+                                Diese klare Strukturierung verbessert die Lesbarkeit, erleichtert die barrierefreie Zugänglichkeit und optimiert die Suchmaschinenoptimierung (SEO). 
+                                Die Verwendung semantischer HTML-Elemente auf einer Website bietet nicht nur eine klare Abgrenzung von Inhalten, sondern gibt auch präzise Hinweise auf deren Bedeutung und Zusammenhang.
+                        </p>
+                        <p>
+                            Der Accessibility Tree (Barrierefreiheitsbaum) spielt eine entscheidende Rolle bei der Schaffung barrierefreier Websites, insbesondere wenn semantisches HTML und ARIA (Accessible Rich Internet Applications) gemeinsam verwendet werden.
+                        </p>
+                        <p>
+                            Der Accessibility Tree ist eine virtuelle Struktur, die die semantischen und hierarchischen Informationen einer Webseite für assistive Technologien wie Bildschirmleser bereitstellt. Diese semantischen Tags tragen dazu bei, dass der Accessibility Tree die Webseite besser interpretieren kann. Das Resultat ist eine präzise Darstellung der Webseite für Nutzer mit Behinderungen, wodurch assistive Technologien kontextrelevantere Informationen bereitstellen können.  
+                        </p>
+                    </div>
+                </div>
+                <div class="sem-code">
+                    <p>
+                        <code class="custom-code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Accessible Semantic HTML&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;                
+        &lt;header&gt;
+            &lt;h1&gt;Website Title&lt;/h1&gt;
+            &lt;nav&gt; &lt;/nav&gt;
+        &lt;/header&gt;                
+    &lt;main&gt;
+            &lt;article&gt; &lt;/article&gt;               
+            &lt;section&gt; &lt;/section&gt;
+    &lt;/main&gt;           
+    &lt;footer&gt;
+    &lt;/footer&gt;                 
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </p>
+                </div>
+                <div class="aria">
+                    <h2>ARIA</h2>
+                    <div class="ar-text">
+                        <p>
+                            ARIA (Accessible Rich Internet Applications) kommt ins Spiel, wenn semantisches HTML allein nicht ausreicht, um bestimmte Interaktionen oder Widgets für assistive Technologien zu kennzeichnen. ARIA bietet zusätzliche Attribute, Rollen und Zustände, die in den HTML-Code eingebunden werden können, um die Semantik zu erweitern. Zum Beispiel können ARIA-Landmarks genutzt werden, um Bereiche wie Navigation, Hauptinhalt oder Suchformulare zu kennzeichnen.
+                        </p>
+                        <p>
+                            Die Kombination von semantischem HTML und ARIA ermöglicht eine noch feinere Kontrolle über die Informationen im Accessibility Tree. Gemeinsam sorgen sie dafür, dass Websites nicht nur strukturiert, sondern auch interaktiv und zugänglich sind. Diese umfassende Herangehensweise gewährleistet, dass Menschen mit Behinderungen, die auf assistive Technologien angewiesen sind, eine verbesserte Benutzererfahrung haben, wenn sie auf den Inhalt einer Website zugreifen.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ar-code">
+                    <p>
+                        <code class="custom-code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;ARIA Example&lt;/title&gt;
+ &lt;/head&gt;
+     &lt;body&gt;
+            &lt;h1&gt;Accessible ARIA Example&lt;/h1&gt;
+            &lt;div role="navigation" aria-label="Main Navigation"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;section role="main" aria-labelledby="section-heading"&gt;
+                &lt;h2 id="section-heading"&gt;Main Content Section&lt;/h2&gt;
+            &lt;/section&gt;
+    &lt;footer role="contentinfo"&gt; &lt;/footer&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </p>
+                </div>
+                <div class="rect">
+                    
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

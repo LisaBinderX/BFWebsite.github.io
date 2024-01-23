@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/Logo.png" lang="en" alt="Inclusive Harmony Logo">
+         </div>
+
+         <div role="search" class="search-container" aria-label="Suchfeld">
+            <input id="searchInput" type="text" tabindex="1" placeholder="Auf dieser Seite suchen...">
+            <button onclick="search()" type="submit" aria-label="Suchen">Suchen</button>
+        </div>
+
+         <nav>
+            <ul>
+                <li><a tabindex="2" href="html.html" aria-label="Gehe zu Home">Home</a></li>
+                <li><a tabindex="3" href="gesetzliches.html" aria-label="Gehe zu Gesetzliches">Gesetzliches</a></li>
+                <li><a tabindex="4" href="code.html" aria-label="Gehe zu Code">Code</a></li>
+                <li><a tabindex="5" href="typo.html" aria-label="Gehe zu Typografie">Typografie</a></li>
+                <li><a tabindex="6" href="https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFF9F5%0D%0A%23D8B29B%0D%0A%23DA895C%0D%0A%231D2213%0D%0A%23090D0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp">Farben</a></li>
+                <li><a tabindex="7" id="downloadLink" aria-label="Download Analyse" href="/Data/WCAG_Analyse_LisaBinder.zip" download>Analyse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="opener">
+            <h1>Niemand ist vor Einschränkungen geschützt</h1>
+            <h3>Die meisten Behinderungen werden im Laufe</br> des Lebens erworben</h3>
+            <h4 class="margin-h4">97% im Laufe des Lebens</h4>
+            <h4 class="margin-h4">3% sind angeboren</h4>
+        </div>
+        <div class="opener-image">
+            <img src="images/headerGrafik.png" alt="" aria-hidden="true">
+        </div>
+
+
+        <div class="boxes">
+            <div class="container1">
+                <h2>10%</h2>
+                <h4>Unerlässlich für 10% der Bevölkerung</h4>
+                <p>7,8 Millionen Menschen in Deutschland haben eine Schwerbehinderung</p>
+                <p>Benötigen Tastatursteuerung, Sprachausgabe oder Braille-Tastaturen</p>
+            </div>
+
+            <div class="container2">
+                <h2>30%</h2>
+                <h4>Erforderlich für 30%</h4>
+                <p>Menschen mit Sehschwäche</p>
+                <p>Erschwerte Bedienbarkeit durch motorische Einschränkungen</p>
+                <p>Sprachbarriere durch geringe Sprach- oder Lesekompetenz</p>
+            </div>
+
+            <div class="container3">
+                <h2>100%</h2>
+                <h4>Hilfreich für alle Nutzer:innen</h4>
+                <p>Fördert einfachere Bedienung (Simplifizierung)</p>
+                <p>Leichter verständliche Inhalte</p>
+                <p>Weniger Anstrengung Nötig (hohe Kontraste)</p>
+            </div>
+        </div>
+
+
+        <div class="definition-box">
+            <h3>Was ist Barrierefreiheit im </br> digitalen Raum? </h3>
+            <p>Barrierefreiheit ist ein grundlegendes Prinzip, das die</br> Entwicklung und Gestaltung von Webseiten und</br> Softwarelösungen prägen sollte, um eine zugängliche</br> und inklusive digitale Welt zu schaffen.</p>
+            <h4>Teilhabe an der Gesellschaft heißt  Zugang zur</br> eigenen Dienstleistung zu haben.</h4>
+        </div> 
+
+
+            <div class="header-bottom">
+                <h2>BARRIEREARTEN</h2>
+            </div>
+            <div class="left-side">
+                <div class="rectangle"></div>
+                <div class="image1">
+                    <img src="images/Bild1Home.png" alt="Backsteinwand mit Schild für barrierefreien Eingang">
+                </div>
+                <div class="image2">
+                    <img src="images/Bild2Home.png" alt="Mann bedient Braille-Tastatur">
+                </div>
+            </div>
+        <div class="arten">
+            <div class="accordion">
+                <div tabindex="7"  role="tab" aria-haspopup="listbox" aria-controls="tabContent" class="tab"><h3 onclick="toggleContent(this)">Visuell</h3><img class="cross" onclick="toggleContent(this)" src="images/cross.png"></div>
+                <div class="content">
+                    <ul role="listbox" aria-controls="tabContent" aria-expanded="true" aria-label="Inhalt Tab">
+                        <li>Blindheit: Menschen, die von Geburt an blind sind oder ihre Sehkraft verloren haben, stehen vor Herausforderungen bei der visuellen Wahrnehmung.</li>
+                        <li>Sehbehinderung: Personen mit eingeschränkter Sehkraft benötigen möglicherweise besondere Hilfsmittel oder Unterstützung, um Informationen besser erfassen zu können.</li>
+                        <li>Farbenblindheit: Menschen, die an Farbenblindheit leiden, haben Schwierigkeiten, bestimmte Farben zu unterscheiden, was ihre visuelle Wahrnehmung beeinträchtigen kann.</li>
+                    </ul>
+                </div>
+
+                <div tabindex="8" role="tab" aria-haspopup="listbox" aria-controls="tabContent" class="tab"><h3 onclick="toggleContent(this)">Auditiv</h3><img class="cross" onclick="toggleContent(this)" src="images/cross.png"></div>
+                <div class="content">
+                    <ul role="listbox" aria-label="Inhalt Tab">
+                        <li>Hörbehinderung: Einschränkungen im Hörvermögen können die Kommunikation erschweren, erfordern möglicherweise spezielle Kommunikationsmittel.</li>
+                        <li>Gehörlosigkeit: Menschen, die taub sind, sind auf visuelle Kommunikationsformen angewiesen, wie Gebärdensprache oder Schriftsprache.</li>
+                    </ul>
+                </div>
+
+                <div tabindex="9" role="tab" aria-haspopup="listbox" aria-controls="tabContent" class="tab"><h3 onclick="toggleContent(this)">Motorisch</h3><img class="cross" onclick="toggleContent(this)" src="images/cross.png"></div>
+                <div class="content">
+                    <ul role="listbox" aria-label="Inhalt Tab">
+                        <li>Einschränkung der Muskelkontrolle: Personen mit eingeschränkter Muskelkontrolle benötigen möglicherweise spezielle Vorrichtungen oder Unterstützung, um sich zu bewegen.</li>
+                        <li>Querschnittslähmung: Diese Art der Behinderung beeinträchtigt die Funktion von Teilen des Körpers, was spezielle Anpassungen erfordern kann.</li>
+                        <li>Fehlende Gliedmaßen: Menschen ohne bestimmte Gliedmaßen müssen Barrieren in Bezug auf Mobilität und tägliche Aktivitäten überwinden.</li>
+                    </ul>
+                </div>
+
+                <div tabindex="10" role="tab" aria-haspopup="listbox" aria-controls="tabContent" class="tab"><h3 onclick="toggleContent(this)">Kognitiv</h3><img class="cross" onclick="toggleContent(this)" src="images/cross.png"></div>
+                <div class="content">
+                    <ul role="listbox" aria-label="Inhalt Tab">
+                        <li>Lernschwäche: Personen mit Lernschwierigkeiten benötigen oft angepasste Lernmethoden und Unterstützung.</li>
+                        <li>Demenz: Menschen mit Demenz haben Schwierigkeiten mit Gedächtnis und kognitiven Funktionen, was ihre täglichen Aktivitäten beeinträchtigt.</li>
+                        <li>Konzentrationsprobleme: Schwierigkeiten, sich zu konzentrieren, können die Fähigkeit zur Aufnahme und Verarbeitung von Informationen behindern.</li>
+                        <li>Autismus: Autismus kann verschiedene Herausforderungen in der Kommunikation und sozialen Interaktion mit sich bringen.</li>
+                    </ul>
+                </div>
+
+                <div tabindex="11" role="tab" aria-haspopup="listbox" aria-controls="tabContent" class="tab"><h3 onclick="toggleContent(this)">Sprachlich</h3><img class="cross" onclick="toggleContent(this)" src="images/cross.png"></div>
+                <div class="content">
+                    <ul role="listbox" aria-label="Inhalt Tab">
+                        <li>Stottern: Personen, die stottern, können Schwierigkeiten beim flüssigen Sprechen haben.</li>
+                        <li>Sprachstörungen: Beeinträchtigungen in der Sprachfähigkeit erschweren die effektive Kommunikation.</li>
+                    </ul>
+                </div>
+
+                <div tabindex="12" role="tab" aria-haspopup="listbox" aria-controls="tabContent" class="tab"><h3 onclick="toggleContent(this)">Psychisch</h3><img class="cross" onclick="toggleContent(this)" src="images/cross.png"></div>
+                <div class="content">
+                    <ul role="listbox" aria-label="Inhalt Tab">
+                        <li>Angststörungen/Traumata: Menschen mit Angststörungen oder Traumata benötigen oft besondere Rücksichtnahme und Unterstützung.</li>
+                        <li>Schizophrenie: Schizophrenie kann die Wahrnehmung der Realität beeinträchtigen und erfordert spezifische Unterstützung.</li>
+                        <li>Selbstmordgefährdet: Personen mit suizidalen Gedanken benötigen dringende professionelle Hilfe und Unterstützung.</li>
+                    </ul>
+                </div>
+
+                <div tabindex="13" role="tab" aria-haspopup="listbox" aria-controls="tabContent" class="tab"><h3 onclick="toggleContent(this)">Technisch</h3><img class="cross" onclick="toggleContent(this)" src="images/cross.png"></div>
+                <div class="content">
+                    <ul role="listbox" aria-label="Inhalt Tab">
+                        <li>Fehlende Medienkompetenz: Menschen, die Schwierigkeiten im Umgang mit Technologie haben, benötigen Schulungen und Unterstützung.</li>
+                        <li>Inkompatible Technik: Die Unverträglichkeit von Technologien kann die Teilnahme an digitalen Aktivitäten erschweren und erfordert entsprechende Anpassungen.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
